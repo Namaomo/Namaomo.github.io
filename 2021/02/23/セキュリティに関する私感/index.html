@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>当ブログに使われている技術 | 雑記ブログ</title>
+  <title>セキュリティに関する私感 | 雑記ブログ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="今回は当ブログを支えている技術について書いてみます。 webホスティングサービスとしてgithub pagesを使っています。 github pagesはgithubから提供されており、静的サイトのみという 制限がありますが、無料で容量無制限(多分)使うことが出来ます。 次に静的サイトジェネレーターとしてhexo(https:&#x2F;&#x2F;hexo.io) を利用しています。 静的サイトジェネレーターとはh">
+  <meta name="description" content="今回はTwitterを見ていて感じたセキュリティ に関する個人の意見を書いていこうと思います。 今回はセキュリティの中でも特にサーバーに焦点を当てていきます。 今回する話はサーバーはパスワード認証より 公開鍵認証がいいとかそういう類の話ではなく Twitterの一部のユーザーのセキュリティ意識の低さ に言及して行こうと思います。 さて、近頃は見なくなりましたが一時期Twitter上で ssh公開界">
 <meta property="og:type" content="article">
-<meta property="og:title" content="当ブログに使われている技術">
-<meta property="og:url" content="https://blog.namaomo.xyz/2021/02/21/%E5%BD%93%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E6%8A%80%E8%A1%93-1/index.html">
+<meta property="og:title" content="セキュリティに関する私感">
+<meta property="og:url" content="https://blog.namaomo.xyz/2021/02/23/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%A7%81%E6%84%9F/index.html">
 <meta property="og:site_name" content="雑記ブログ">
-<meta property="og:description" content="今回は当ブログを支えている技術について書いてみます。 webホスティングサービスとしてgithub pagesを使っています。 github pagesはgithubから提供されており、静的サイトのみという 制限がありますが、無料で容量無制限(多分)使うことが出来ます。 次に静的サイトジェネレーターとしてhexo(https:&#x2F;&#x2F;hexo.io) を利用しています。 静的サイトジェネレーターとはh">
+<meta property="og:description" content="今回はTwitterを見ていて感じたセキュリティ に関する個人の意見を書いていこうと思います。 今回はセキュリティの中でも特にサーバーに焦点を当てていきます。 今回する話はサーバーはパスワード認証より 公開鍵認証がいいとかそういう類の話ではなく Twitterの一部のユーザーのセキュリティ意識の低さ に言及して行こうと思います。 さて、近頃は見なくなりましたが一時期Twitter上で ssh公開界">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2021-02-21T07:40:50.000Z">
-<meta property="article:modified_time" content="2021-02-21T12:51:24.751Z">
+<meta property="article:published_time" content="2021-02-22T16:03:39.000Z">
+<meta property="article:modified_time" content="2021-02-22T16:31:59.388Z">
 <meta property="article:author" content="namaomo">
 <meta property="article:tag" content="tech">
 <meta name="twitter:card" content="summary">
@@ -74,10 +74,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-当ブログに使われている技術-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-セキュリティに関する私感" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/02/21/%E5%BD%93%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E6%8A%80%E8%A1%93-1/" class="article-date">
-  <time class="dt-published" datetime="2021-02-21T07:40:50.000Z" itemprop="datePublished">2021-02-21</time>
+    <a href="/2021/02/23/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%A7%81%E6%84%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-02-22T16:03:39.000Z" itemprop="datePublished">2021-02-23</time>
 </a>
     
   </div>
@@ -88,7 +88,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      当ブログに使われている技術
+      セキュリティに関する私感
     </h1>
   
 
@@ -96,22 +96,43 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>今回は当ブログを支えている技術について書いてみます。</p>
-<p>webホスティングサービスとしてgithub pagesを使っています。</p>
-<p>github pagesはgithubから提供されており、静的サイトのみという</p>
-<p>制限がありますが、無料で容量無制限(多分)使うことが出来ます。</p>
-<p>次に静的サイトジェネレーターとしてhexo(<a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io</a>)</p>
-<p>を利用しています。</p>
-<p>静的サイトジェネレーターとはhtmlやcssなどのサイトの骨組みを自動</p>
-<p>で作ってもらえたり、マークダウン言語で書いた記事を静的サイトで</p>
-<p>動く形に変換してもらえたりします。</p>
-<p>hexoはnode.jsで高速なサイトを作ることができるらしいです。</p>
-<p>それでは。</p>
+        <p>今回はTwitterを見ていて感じたセキュリティ</p>
+<p>に関する個人の意見を書いていこうと思います。</p>
+<p>今回はセキュリティの中でも特にサーバーに焦点を当てていきます。</p>
+<p>今回する話はサーバーはパスワード認証より</p>
+<p>公開鍵認証がいいとかそういう類の話ではなく</p>
+<p>Twitterの一部のユーザーのセキュリティ意識の低さ</p>
+<p>に言及して行こうと思います。</p>
+<p>さて、近頃は見なくなりましたが一時期Twitter上で</p>
+<p>ssh公開界隈なるものが出現していました。</p>
+<p>ssh公開界隈とは簡潔に言うと</p>
+<p>自分の所有するサーバーのipアドレスとパスワード</p>
+<p>をSNS上に公開するという何が楽しいのかわからない</p>
+<p>謎行為をする人間の集まりです。</p>
+<p>この謎行為をしている人たちがあくまで知識があってするなら</p>
+<p>自己責任と言うだけでそこまで問題がないと思いますが</p>
+<p>このssh公開界隈の多くの人はあまりセセキュリティ知識が</p>
+<p>ない人だと思います。</p>
+<p>勿論sshを公開するということは環境の破壊をされる可能性や</p>
+<p>最悪犯罪行為の踏み台にされて警察の世話になるかもしれない</p>
+<p>ような危険な行為なのですが</p>
+<p>それらの危険性を全く知らないような人が人の真似をして</p>
+<p>sshを公開しているというのが実状だと思います。</p>
+<p>また実害として自宅のネット環境を破壊されている人も</p>
+<p>発生していた模様です。</p>
+<p>sshをSNSに公開したらいけないとここでいくら書いても</p>
+<p>変わらないと思いますので特に注意喚起などをしようとは</p>
+<p>思いませんが、サーバーを建てるときは最低限の</p>
+<p>ネットリテラシーやセキュリティ知識を持つべきだと痛感しました。</p>
+<p>また少し不自由に感じるかもしれませんが、</p>
+<p>他の人が真似する可能性がある危険な行為をネット上に公開する時は</p>
+<p>注意書きを入れたほうがいいかと思います。</p>
+<p>それではこの辺で終わります。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.namaomo.xyz/2021/02/21/%E5%BD%93%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E6%8A%80%E8%A1%93-1/" data-id="cklge2ooy0004kkiz1wgybnv7" data-title="当ブログに使われている技術" class="article-share-link">共有</a>
+      <a data-url="https://blog.namaomo.xyz/2021/02/23/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%A7%81%E6%84%9F/" data-id="cklgrs2l50000b2izflhe5r3z" data-title="セキュリティに関する私感" class="article-share-link">共有</a>
       
       
       
@@ -123,19 +144,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/02/21/Twitter%E3%82%88%E3%82%8Amastdon%E3%82%88%E3%82%8Amisskey/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          Twitterよりmastodonよりmisskey
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/21/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/02/22/%E3%81%BB%E3%81%97%E3%81%84%E7%89%A9%E3%82%92%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D%E3%81%A7%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%84%E3%81%8F/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">はじめまして</div>
+      <div class="article-nav-title">ほしい物を箇条書きで書いていく</div>
     </a>
   
 </nav>
